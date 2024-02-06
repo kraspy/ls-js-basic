@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Slider & Modal</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="section slider">
+        <div class="slider__container">
+          <div class="slider__left">
+            <button class="btn" type="button" id="slide-left">←</button>
+          </div>
+          <div class="slider__wrapper">
+            <ul class="slider__items">
+              <li class="slide">
+                <div class="slide__content">1</div>
+              </li>
+              <li class="slide">
+                <div class="slide__content">2</div>
+              </li>
+              <li class="slide">
+                <div class="slide__content">3</div>
+              </li>
+              <li class="slide">
+                <div class="slide__content">4</div>
+              </li>
+              <li class="slide">
+                <div class="slide__content">5</div>
+              </li>
+              <li class="slide">
+                <div class="slide__content">6</div>
+              </li>
+              <li class="slide">
+                <div class="slide__content">7</div>
+              </li>
+              <li class="slide">
+                <div class="slide__content">8</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="slider__right">
+            <button class="btn" type="button" id="slide-right">→</button>
+          </div>
+        </div>
+      </section>
+      <section class="section modal">
+        <button class="btn btn--primary" type="button" id="showModalBtn">
+          Open Modal
+        </button>
+      </section>
+      <div class="modal" id="modal">
+        <div class="modal__wrapper">
+          <div class="message">
+            <div class="message__title">This is modal</div>
+            <div class="message__content">
+              <div class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos distinctio quaerat est quis, fuga voluptatum modi, laboriosam ut id architecto ipsa minima, rem dicta tempora corporis exercitationem perspiciatis aliquam doloremque.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
