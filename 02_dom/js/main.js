@@ -8,6 +8,7 @@ const MAX_SLIDER_POS = 500;
 //Modal
 const modal = document.querySelector('#modal');
 const btnModal = document.querySelector('#showModalBtn');
+const btnClose = document.querySelector('#closeModalBtn');
 
 function toggleSlide(direction) {
   let curPos = parseInt(getComputedStyle(slider).right);
@@ -44,6 +45,6 @@ function closeModal() {
 
 btnModal.addEventListener('click', showModal);
 
-modal.addEventListener('click', (event) => {
+btnClose.addEventListener('click', (event) => {
   closeModal();
 })
