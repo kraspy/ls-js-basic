@@ -5,7 +5,7 @@
 // Вариант 1
 function getVowels(string) {
   const VOWELS = 'аеёиоуыэюя';
-  result = [];
+  let result = [];
   for (let i = 0; i < string.length; i++) {
     if (VOWELS.includes(string[i])) {
       result.push(string[i]);
@@ -18,14 +18,14 @@ function getVowels(string) {
 // Вариант 2
 function getVowels(string) {
   const VOWELS = 'аеёиоуыэюя';
-  array_of_symbols = string.split('');
+  let arrayOfSymbols = string.split('');
   for (let i = string.length; i >= 0; i--) {
     if (!VOWELS.includes(string[i])) {
-      array_of_symbols.splice(i, 1);
+      arrayOfSymbols.splice(i, 1);
     }
   }
 
-  return array_of_symbols.join('');
+  return arrayOfSymbols.join('');
 }
 
 // Вариант 3
@@ -68,7 +68,7 @@ function getWorthyWorkers(workers) {
   }
 
   return result;
-}
+}˜
 
 // Вариант 3
 function getWorthyWorkers(workers) {
@@ -77,7 +77,7 @@ function getWorthyWorkers(workers) {
 
 const workers = [
   { name: 'John', salary: 500 },
-  { name: 'Mike', salary: 1300 },
+  { name: 'Mike', salary˜: 1300 },
   { name: 'Linda', salary: 1500 },
 ];
 console.log(getWorthyWorkers(workers));
